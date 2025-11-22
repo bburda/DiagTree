@@ -11,6 +11,10 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>rcl_interfaces</depend>
   <depend>nlohmann-json-dev</depend>
   <depend>libcpp-httplib-dev</depend>
 
@@ -18,6 +22,8 @@
   <test_depend>ament_lint_common</test_depend>
   <test_depend>ament_clang_format</test_depend>
   <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

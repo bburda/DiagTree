@@ -1,0 +1,50 @@
+{
+  "info": {
+    "name": "ROS 2 Medkit Gateway API",
+    "description": "Minimal collection: GET / and GET /areas endpoints only",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Discovery",
+      "item": [
+        {
+          "name": "GET Gateway Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                ""
+              ]
+            },
+            "description": "Get gateway status and version information"
+          },
+          "response": []
+        },
+        {
+          "name": "GET List Areas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/areas",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "areas"
+              ]
+            },
+            "description": "List all discovered areas (powertrain, chassis, body, root)"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

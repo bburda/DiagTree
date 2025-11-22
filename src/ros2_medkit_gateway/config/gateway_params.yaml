@@ -1,0 +1,26 @@
+# ROS 2 Medkit Gateway Configuration Parameters
+#
+# This file contains default configuration for the ROS 2 Medkit Gateway.
+# You can override these values via:
+#   - Command line: --ros-args -p server.port:=9000
+#   - Launch files: parameters=[...]
+#   - This YAML file
+
+ros2_medkit_gateway:
+  ros__parameters:
+    # Server Configuration
+    server:
+      # Host to bind the REST server to
+      # Options:
+      #   - "127.0.0.1" (localhost only - SECURE, default)
+      #   - "0.0.0.0" (all interfaces - use for Docker/networking)
+      host: "127.0.0.1"
+
+      # Port for REST API
+      # Valid range: 1024-65535
+      port: 8080
+
+    # Cache refresh interval in milliseconds
+    # How often to discover ROS 2 nodes and update the cache
+    # Valid range: 100-60000 (0.1s to 60s)
+    refresh_interval_ms: 2000
